@@ -1,3 +1,4 @@
+/* ----------2--------------- */
 .ex-1-square {
     width: 100px;
     height: 100px;
@@ -7,7 +8,7 @@
 .ex-1-square:hover {
     background-color: red;
 }
-/* ------------------------- */
+/* ----------2--------------- */
 .ex-2-square {
     width: 100px;
     height: 100px;
@@ -17,7 +18,7 @@
 .ex-2-square:active {
     width: 100%;
 }
-/* ------------------------- */
+/* -----------3-------------- */
 .ex-3-square {
     width: 100px;
     height: 100px;
@@ -27,7 +28,7 @@
 .ex-3-square:hover {
     border-radius: 50%;
 }
-/* ------------------------- */
+/* ------------4------------- */
 .ex-4-square {
     width: 100px;
     height: 100px;
@@ -37,7 +38,7 @@
 .ex-4-square:hover {
     opacity: 0;
 }
-/* ------------------------- */
+/* -----------5-------------- */
 .ex-5-square {
     margin: 20px;
     width: 60px;
@@ -51,22 +52,22 @@
 .ex-5-square:active {
     transform: scale(0.5);
 }
-/* ------------------------- */
+/* -----------6/7/8-------------- */
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
-/*---------------------------*/
+/*------------6---------------*/
 .ex-6-img:hover {
     filter: grayscale(1);
 }
-/* ------------------------- */
+/* -------------7------------ */
 .ex-7-img {
     transition: 1.5s linear;
 }
 .ex-7-img:hover {
     filter: grayscale(0.5) sepia(0.5);
 }
-/* ------------------------- */
+/* --------------8----------- */
 .ex-8-img {
     transition: 1.5s linear;
 }
@@ -74,7 +75,7 @@
     filter: grayscale(0.5) sepia(0.5);
     border-radius: 20px;
 }
-/* ------------------------- */
+/* ------------9------------- */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
@@ -85,7 +86,7 @@
     border-radius: 20px;
     transform: scale(1.5);
 }
-/* ------------------------- */
+/* ------------10------------- */
 .ex-10-icon {
     font-size: 60px;
     animation: rotate 0.5s linear infinite;
@@ -95,7 +96,7 @@
         transform: rotate(360deg);
     }
 }
-/* ------------------------- */
+/* ------------11------------- */
 .ex-11-icon {
     font-size: 60px;
 }
@@ -113,7 +114,7 @@
         transform: rotate(0deg);
     }
 }
-/* ------------------------- */
+/* ------------12/13------------- */
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -127,7 +128,6 @@
     text-align: center;
     text-decoration: none;
 }
-/* ------------------------- */
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
@@ -136,7 +136,6 @@
     width: 60px;
     height: 20px;
 }
-/* ------------------------- */
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
@@ -145,3 +144,92 @@
     width: 60px;
     height: 20px;
 }
+/* -----------12-------------- */
+.ex-12-button:hover .ex-12-top-white {
+    animation: top-move 1.5s linear;
+}
+@keyframes top-move {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: calc(100% - 60px);
+    }
+    100% {
+        left: 0;
+    }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: bottom-move 1.5s linear;
+}
+@keyframes bottom-move {
+    0% {
+        right: 0;
+    }
+    50% {
+        right: calc(100% - 60px);
+    }
+    100% {
+        right: 0;
+    }
+}
+/* -----------13-------------- */
+.ex-13-button:hover .ex-13-top-white {
+    animation: top-spin 1.5s linear;
+}
+@keyframes top-spin {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: bottom-spin 1.5s linear;
+}
+@keyframes bottom-spin {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 20%;
+    }
+}
+
