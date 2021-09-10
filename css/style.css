@@ -4,7 +4,6 @@
     border: 1px solid red;
     transition: 1.5s;
 }
-
 .ex-1-square:hover {
     background-color: red;
 }
@@ -13,18 +12,30 @@
     width: 100px;
     height: 100px;
     background: red;
+    transition: 1.5s linear;
+}
+.ex-2-square:active {
+    width: 100%;
 }
 /* ------------------------- */
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: 1s linear;
+}
+.ex-3-square:hover {
+    border-radius: 50%;
 }
 /* ------------------------- */
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: 1.5s linear;
+}
+.ex-4-square:hover {
+    opacity: 0;
 }
 /* ------------------------- */
 .ex-5-square {
@@ -32,23 +43,75 @@
     width: 60px;
     height: 60px;
     background: red;
+    transition: 0.5s linear;
+}
+.ex-5-square:hover {
+    transform: scale(1.5);
+}
+.ex-5-square:active {
+    transform: scale(0.5);
 }
 /* ------------------------- */
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
+/*---------------------------*/
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+/* ------------------------- */
+.ex-7-img {
+    transition: 1.5s linear;
+}
+.ex-7-img:hover {
+    filter: grayscale(0.5) sepia(0.5);
+}
+/* ------------------------- */
+.ex-8-img {
+    transition: 1.5s linear;
+}
+.ex-8-img:hover {
+    filter: grayscale(0.5) sepia(0.5);
+    border-radius: 20px;
+}
 /* ------------------------- */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 1.5s linear;
+}
+.ex-9-img:hover {
+    filter: grayscale(0.5) sepia(0.5);
+    border-radius: 20px;
+    transform: scale(1.5);
 }
 /* ------------------------- */
 .ex-10-icon {
     font-size: 60px;
+    animation: rotate 0.5s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
 }
 /* ------------------------- */
 .ex-11-icon {
     font-size: 60px;
+}
+.ex-11-icon:hover {
+    animation: partial-rotate 1.5s linear;
+}
+@keyframes partial-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 /* ------------------------- */
 .ex-12-button, .ex-13-button {
