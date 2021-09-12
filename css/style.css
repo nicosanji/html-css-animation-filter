@@ -1,4 +1,4 @@
-/* ----------2--------------- */
+/* ----------1--------------- */
 .ex-1-square {
     width: 100px;
     height: 100px;
@@ -146,7 +146,7 @@
 }
 /* -----------12-------------- */
 .ex-12-button:hover .ex-12-top-white {
-    animation: top-move 1.5s linear;
+    animation: top-move 1.5s linear infinite;
 }
 @keyframes top-move {
     0% {
@@ -160,7 +160,7 @@
     }
 }
 .ex-12-button:hover .ex-12-bottom-white {
-    animation: bottom-move 1.5s linear;
+    animation: bottom-move 1.5s linear infinite;
 }
 @keyframes bottom-move {
     0% {
@@ -175,7 +175,7 @@
 }
 /* -----------13-------------- */
 .ex-13-button:hover .ex-13-top-white {
-    animation: top-spin 1.5s linear;
+    animation: top-spin 1.5s linear infinite;
 }
 @keyframes top-spin {
     0% {
@@ -204,7 +204,7 @@
     }
 }
 .ex-13-button:hover .ex-13-bottom-white {
-    animation: bottom-spin 1.5s linear;
+    animation: bottom-spin 1.5s linear infinite;
 }
 @keyframes bottom-spin {
     0% {
